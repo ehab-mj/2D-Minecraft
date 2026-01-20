@@ -1,4 +1,4 @@
-2D Minecraft (Vanilla JavaScript)
+# 2D Minecraft (Vanilla JavaScript)
 
 built using 
 **HTML, CSS, and Vanilla JavaScript DOM**.  
@@ -41,5 +41,6 @@ using **DOM manipulation** and clean game state management.
 
 ---
 
-How to Run
-git clone https://github.com/your-username/minecraft-2d.git
+# How to Run
+- git **clone** https://github.com/your-username/minecraft-2d.git
+- Open **index.html** in your browser
