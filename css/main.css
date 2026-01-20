@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #87ceeb;
+}
+
+#landing {
+    position: fixed;
+    inset: 0;
+    background: url(../assets/blocks/bg.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+}
+
+#landing .menu-box {
+    background: rgba(0, 0, 0, 0.55);
+    padding: 40px 50px;
+    border-radius: 8px;
+    border: 4px solid #2b2b2b;
+    box-shadow: inset 0 0 0 3px #6f6f6f;
+    text-align: center;
+}
+
+#landing h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow:
+        3px 3px 0 #2b2b2b,
+        -1px -1px 0 #2b2b2b;
+    letter-spacing: 2px;
+}
+
+#landing button {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.mc-button {
+    width: 260px;
+    padding: 14px 0;
+    margin-top: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+
+    background: linear-gradient(#6fcf4a, #4ea031);
+    border: 4px solid #2b2b2b;
+    box-shadow:
+        inset 0 0 0 3px #9be26b,
+        0 4px 0 #1e5f1b;
+
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.mc-button:hover {
+    background: linear-gradient(#7fe85c, #5dbf3c);
+}
+
+.mc-button:active {
+    transform: translateY(4px);
+    box-shadow:
+        inset 0 0 0 3px #9be26b,
+        0 0 0 #1e5f1b;
+}

@@ -1,0 +1,182 @@
+.hidden {
+    display: none;
+}
+
+#game {
+    padding: 10px;
+}
+
+#top-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#tools button {
+    margin-right: 5px;
+}
+
+#world {
+    display: grid;
+    width: max-content;
+    height: max-content;
+}
+
+#worldWrap {
+    position: fixed;
+    inset: 0;
+    overflow: auto;
+    background: #87ceeb;
+}
+
+.tile {
+    position: relative;
+}
+
+.sky {
+    background-color: #87ceeb;
+}
+
+.grass {
+    background: url(../assets/blocks/grass.jpg);
+    background-size: cover;
+}
+
+.dirt {
+    background: url(../assets/blocks/dirt.png);
+    background-size: cover;
+}
+
+
+.rock,
+.diamond-red,
+.diamond-blue,
+.diamond-yellow,
+.diamond-green {
+    position: relative;
+}
+
+.diamond-red::after,
+.diamond-blue::after,
+.diamond-yellow::after,
+.diamond-green::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 30% 35%, rgba(255, 255, 255, 0.9) 0 2px, transparent 3px),
+        radial-gradient(circle at 70% 60%, rgba(255, 255, 255, 0.7) 0 1.5px, transparent 3px);
+    opacity: 0;
+    animation: sparkle 1.2s infinite;
+}
+
+@keyframes sparkle {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    20% {
+        opacity: 0.9;
+        transform: scale(1.02);
+    }
+
+    40% {
+        opacity: 0.1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.rock {
+    background: url(../assets/blocks/rock.jpg);
+    background-size: cover;
+}
+
+.diamond-red {
+    background: url(../assets/blocks/RedRock.jpg);
+    background-size: cover;
+}
+
+.diamond-blue {
+    background: url(../assets/blocks/BluRock.jpg);
+    background-size: cover;
+}
+
+.diamond-yellow {
+    background: url(../assets/blocks/YellowRock.jpg);
+    background-size: cover;
+}
+
+.diamond-green {
+    background: url(../assets/blocks/GreenRock.jpg);
+    background-size: cover;
+}
+
+
+.wood {
+    background: url(../assets/blocks/woods.png);
+    background-size: cover;
+}
+
+.leaves {
+    background: url(../assets/blocks/Tree.jpg);
+    background-size: cover;
+}
+
+.flower-red,
+.flower-yellow,
+.flower-blue,
+.flower-white,
+.flower-purple {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.flower-red {
+    background-image: url("../assets/blocks/red_flower.jpg");
+}
+
+.flower-yellow {
+    background-image: url("../assets/blocks/yellow_flower.jpg");
+}
+
+.flower-blue {
+    background-image: url("../assets/blocks/blue_flower.jpg");
+}
+
+.flower-white {
+    background-image: url("../assets/blocks/white_flower.jpg");
+}
+
+.flower-purple {
+    background-image: url("../assets/blocks/orange_flower.jpg");
+}
+
+.leaves::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.08),
+            rgba(255, 255, 255, 0.08) 1px,
+            transparent 1px,
+            transparent 2px);
+}
+
+.grass::after,
+.dirt::after,
+.rock::after,
+.wood::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: repeating-linear-gradient(45deg,
+            rgba(255, 255, 255, 0.05),
+            rgba(255, 255, 255, 0.05) 1px,
+            transparent 1px,
+            transparent 2px);
+}
