@@ -52,7 +52,11 @@
 .diamond-red,
 .diamond-blue,
 .diamond-yellow,
-.diamond-green {
+.diamond-green,
+.diamond-brown,
+.diamond-dark-blue,
+.diamond-black,
+.TNT {
     position: relative;
 }
 
@@ -115,6 +119,25 @@
     background-size: cover;
 }
 
+.diamond-brown {
+    background: url(../assets/blocks/brown_diamond.jpg);
+    background-size: cover;
+}
+
+.diamond-dark-blue {
+    background: url(../assets/blocks/darkBlu_diamond.jpg);
+    background-size: cover;
+}
+
+.diamond-black {
+    background: url(../assets/blocks/black_diamond.jpg);
+    background-size: cover;
+}
+
+.TNT {
+    background: url(../assets/blocks/TNT.jpg);
+    background-size: cover;
+}
 
 .wood {
     background: url(../assets/blocks/woods.png);
@@ -130,7 +153,14 @@
 .flower-yellow,
 .flower-blue,
 .flower-white,
-.flower-purple {
+.flower-purple,
+.flower-pink,
+.carot,
+.feter,
+.long-feter,
+.small-tree,
+.long-brown-grass,
+.long-grass {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -154,6 +184,34 @@
 
 .flower-purple {
     background-image: url("../assets/blocks/orange_flower.jpg");
+}
+
+.flower-pink {
+    background-image: url("../assets/blocks/pink_flower.jpg");
+}
+
+.carot {
+    background-image: url("../assets/blocks/carot.jpg");
+}
+
+.feter {
+    background-image: url("../assets/blocks/Fter.jpg");
+}
+
+.long-feter {
+    background-image: url("../assets/blocks/Long_feter.jpg");
+}
+
+.small-tree {
+    background-image: url("../assets/blocks/small-tree.jpg");
+}
+
+.long-brown-grass {
+    background-image: url("../assets/blocks/brown_Long_grass.jpg");
+}
+
+.long-grass {
+    background-image: url("../assets/blocks/Long_grass.jpg");
 }
 
 .leaves::after {

@@ -16,6 +16,6 @@ const MAX_SCALE = 3;
 
 const toolRules = {
     axe: ["wood", "leaves"],
-    shovel: ["dirt", "grass", "flower-red", "flower-yellow", "flower-blue", "flower-white", "flower-purple"],
-    pickaxe: ["rock", "diamond-red", "diamond-blue", "diamond-yellow", "diamond-green"]
+    shovel: ["dirt", "grass", "flower-red", "flower-yellow", "flower-blue", "flower-white", "flower-purple", "flower-pink", "carot", "long-feter", "feter", "small-tree", "long-brown-grass", "long-grass"],
+    pickaxe: ["rock", "diamond-red", "diamond-blue", "diamond-yellow", "diamond-green", "diamond-black", "diamond-dark-blue", "diamond-brown"]
 };

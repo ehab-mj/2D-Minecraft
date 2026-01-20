@@ -37,19 +37,19 @@ function World() {
 
 function Caves() {
     for (let i = 0; i < world.length; i++) {
-        if (world[i] === "rock" && Math.random() < 0.08) {
+        if (world[i] === "rock" && Math.random() < 0.05) {
             world[i] = "sky";
         }
     }
 }
 
 function addDiamonds() {
-    const diamondTypes = ["diamond-red", "diamond-blue", "diamond-yellow", "diamond-green"];
+    const diamondTypes = ["diamond-red", "diamond-blue", "diamond-yellow", "diamond-green", "diamond-black", "diamond-dark-blue", "diamond-brown", "TNT"];
 
     for (let i = 0; i < world.length; i++) {
         const row = Math.floor(i / COLM);
         if (world[i] === "rock" && row > ROWS * 0.7) {
-            if (Math.random() < 0.04) {
+            if (Math.random() < 0.50) {
                 world[i] = diamondTypes[Math.floor(Math.random() * diamondTypes.length)];
             }
         }
@@ -75,21 +75,20 @@ function addTrees() {
     }
 }
 function addFlowers() {
-    const flowers = ["flower-red", "flower-yellow", "flower-blue", "flower-white", "flower-purple"];
+    const flowers = ["flower-red", "flower-yellow", "flower-blue", "flower-white", "flower-purple", "flower-pink", "carot", "long-feter", "feter", "small-tree", "long-brown-grass", "long-grass"];
 
     for (let col = 1; col < COLM - 1; col++) {
         for (let row = 1; row < ROWS; row++) {
             const x = row * COLM + col;
             if (world[x] === "grass") {
                 const aboveX = (row - 1) * COLM + col;
-                if (world[aboveX] === "sky" && Math.random() < 0.20) {
+                if (world[aboveX] === "sky" && Math.random() < 0.90) {
                     world[aboveX] = flowers[Math.floor(Math.random() * flowers.length)];
                 }
             }
         }
     }
 }
-
 
 window.initGame = function () {
     WorldSize();
