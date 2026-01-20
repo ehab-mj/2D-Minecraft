@@ -42,5 +42,5 @@ using **DOM manipulation** and clean game state management.
 ---
 
 # How to Run: 
-- git **clone** https://github.com/your-username/minecraft-2d.git
+- git **clone** https://github.com/ehab-mj/2D-Minecraft
 - Open **index.html** in your browser
