@@ -4,27 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Minecraft</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/ui.css" />
     <link rel="stylesheet" href="./css/world.css" />
 </head>
 
 <body>
-    <div id="landing">
+    <section id="landing">
         <div class="menu-box">
             <h1>2D Minecraft</h1>
             <button class="mc-button" onclick="startFromMenu()">
                 Start Game
             </button>
         </div>
-    </div>
+    </section>
 
-    <div id="game" style="display:none;">
+    <section id="game" style="display:none;">
 
-        <div id="world"></div>
+        <section id="world"></section>
 
-        <div id="toolsBar">
+        <section id="toolsBar">
             <div class="slot" data-tool="axe">
                 <img src="./assets/Tools/axe.png" alt="axe">
             </div>
@@ -36,17 +36,16 @@
             <div class="slot" data-tool="shovel">
                 <img src="./assets/Tools/shovel.png" alt="shovel">
             </div>
-        </div>
+        </section>
 
-        <div id="inventory"></div>
+        <section id="inventory"></section>
 
-        <div id="mapControls">
+        <section id="mapControls">
             <label>Map Size:</label>
             <input id="mapSize" type="number" min="1" max="3" value="1">
             <button id="applyMapSize">Apply</button>
-        </div>
-
-    </div>
+        </section>
+    </section>
 
     <script defer src="./js/breaking.js"></script>
     <script defer src="./js/constants.js"></script>

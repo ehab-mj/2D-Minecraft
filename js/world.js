@@ -23,14 +23,14 @@ function World() {
         groundHeight = Math.max(Math.floor(ROWS * 0.35),
             Math.min(Math.floor(ROWS * 0.65), groundHeight));
         for (let row = 0; row < ROWS; row++) {
-            const x = row * COLM + col;
+            const index = row * COLM + col;
             if (row < groundHeight)
-                world[x] = "sky";
+                world[index] = "sky";
             else if (row === groundHeight)
-                world[x] = "grass";
+                world[index] = "grass";
             else if (row <= groundHeight + 3)
-                world[x] = "dirt";
-            else world[x] = "rock";
+                world[index] = "dirt";
+            else world[index] = "rock";
         }
     }
 }
@@ -79,8 +79,8 @@ function addFlowers() {
 
     for (let col = 1; col < COLM - 1; col++) {
         for (let row = 1; row < ROWS; row++) {
-            const x = row * COLM + col;
-            if (world[x] === "grass") {
+            const index = row * COLM + col;
+            if (world[index] === "grass") {
                 const aboveX = (row - 1) * COLM + col;
                 if (world[aboveX] === "sky" && Math.random() < 0.90) {
                     world[aboveX] = flowers[Math.floor(Math.random() * flowers.length)];

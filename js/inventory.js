@@ -8,7 +8,7 @@ function renderInventory() {
     inventoryEl.innerHTML = "";
 
     for (let type in inventory) {
-        const slot = document.createElement("div"); // ننشئ عنصر div جديد
+        const slot = document.createElement("div");
         slot.className = `inv-slot ${type}`;
 
         if (selectedBlock === type) {
